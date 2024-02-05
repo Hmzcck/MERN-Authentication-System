@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #ff5a5f;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form [type=email],
+.login-form [type=password] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form [type=submit] {
+    padding: 10px;
+    background-color: #ff5a5f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login-form input[type=submit]:hover {
+    background-color: #e55053;
+}
+
+.oauth-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.oauth-buttons button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+    /* Slightly less than half to fit two buttons */
+}
+
+.google-btn {
+    background-color: #db4437;
+    color: white;
+}
+
+.microsoft-btn {
+    background-color: #3d4043;
+    color: white;
+}
+
+.sso-btn {
+    background-color: #5e5e5e;
+    color: white;
+    width: 100%;
+}
+
+.sso-btn:hover,
+.oauth-buttons button:hover {
+    opacity: 0.8;
+}
