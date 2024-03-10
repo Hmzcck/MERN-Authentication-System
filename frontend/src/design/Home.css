@@ -1,0 +1,22 @@
+/* HomePage.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .homepage-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    color: #4a54f1;
+    text-transform: uppercase;
+  }
+  
+  p {
+    color: #626567;
+  }
+  

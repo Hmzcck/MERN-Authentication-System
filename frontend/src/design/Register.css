@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; 
+    color: #e0e0e0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container,
+.register-container {
+    background-color: #333; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); 
+    color: #e0e0e0; 
+    width: 300px; 
+}
+
+.login-container h2,
+.register-container h2 {
+    text-align: center;
+    color: #76ff03;
+    margin-bottom: 20px;
+}
+
+.login-form,
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form [type=email],
+.login-form [type=password],
+.register-form input[type=text],
+.register-form input[type=email],
+.register-form input[type=password] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555; 
+    background-color: #222; 
+    color: #fff; 
+    border-radius: 5px;
+}
+
+.login-form [type=submit],
+.register-form [type=submit] {
+    padding: 10px;
+    background-color: #0d47a1; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login-form [type=submit]:hover,
+.register-form [type=submit]:hover {
+    background-color: #1565c0; 
+}
+
+.oauth-buttons button,
+.login-back {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%; 
+    background-color: #286d00; 
+    color: white;
+    margin-bottom: 10px;
+}
+
+.oauth-buttons button:hover,
+.login-back:hover {
+    opacity: 0.8;
+}
+
+.back-to-login,
+.login-back {
+    text-align: center;
+    color: #64b5f6; 
+    cursor: pointer;
+}
+
+.back-to-login:hover,
+.login-back:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #ef5350;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

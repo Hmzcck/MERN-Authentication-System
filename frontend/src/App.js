@@ -1,35 +1,20 @@
 import React from 'react';
 import LoginForm from './pages/Login';
+import RegisterForm from './pages/Register';
+import HomePage from './pages/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 const App = () => {
-  const handleLogin = async (email, password) => {
-    // Implement your login logic here, such as sending a request to your server
-    console.log('Login attempt with:', email, password);
-
-    try {
-      const response = await fetch('http://localhost:5000/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data = await response.json();
-      console.log('Data:', data);
-    } catch (error) {
-      console.error("Could not fetch the data", error);
-    }
-    
-  };
-
-  return (
-    <div>
-      <LoginForm onLogin={handleLogin} />
-    </div>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<LoginForm onLogin />} />
+                <Route path="/register" element={<RegisterForm />} />
+                <Route path="/home" element={<HomePage />} />
+            </Routes>
+        </Router>
+    );
 };
 
 export default App;
