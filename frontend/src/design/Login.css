@@ -1,6 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #121212; 
+    color: #e0e0e0; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,15 +10,15 @@ body {
 }
 
 .login-container {
-    background-color: white;
+    background-color: #333; 
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); 
 }
 
 .login-container h2 {
     text-align: center;
-    color: #ff5a5f;
+    color: #76ff03; 
     margin-bottom: 20px;
 }
 
@@ -30,13 +31,15 @@ body {
 .login-form [type=password] {
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #555; 
+    background-color: #222;
+    color: #e0e0e0; 
     border-radius: 5px;
 }
 
 .login-form [type=submit] {
     padding: 10px;
-    background-color: #ff5a5f;
+    background-color: #0a0;
     border: none;
     border-radius: 5px;
     color: white;
@@ -44,8 +47,8 @@ body {
     margin-bottom: 10px;
 }
 
-.login-form input[type=submit]:hover {
-    background-color: #e55053;
+.login-form [type=submit]:hover {
+    background-color: #088; 
 }
 
 .oauth-buttons {
@@ -59,27 +62,50 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 48%;
-    /* Slightly less than half to fit two buttons */
+    width: 48%; 
 }
 
 .google-btn {
-    background-color: #db4437;
+    background-color: #cf6679; 
     color: white;
 }
 
 .microsoft-btn {
-    background-color: #3d4043;
+    background-color: #536DFE; 
     color: white;
 }
 
 .sso-btn {
-    background-color: #5e5e5e;
-    color: white;
     width: 100%;
+    padding: 10px;
+    background-color: #BB86FC; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .sso-btn:hover,
 .oauth-buttons button:hover {
     opacity: 0.8;
+}
+
+.back-to-login {
+    margin-top: 20px;
+    text-align: center;
+    color: #76ff03; 
+    text-decoration: none; 
+    cursor: pointer; 
+}
+
+.back-to-login:hover {
+    text-decoration: underline; 
+}
+
+.error-message {
+    color: #ff1744;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
